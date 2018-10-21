@@ -5,13 +5,9 @@
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form"/>
       <field name="arch" type="xml">
-	<page name="hr_travelsupport" string="HR Travelsupport">
-	  <group>
-	    <group string="Loyalty info" name="loyalty_cards">
-	      <field name="loyaltycard_ids" string="Loyaltycards"/>
-	    </group>
-	  </group>
-	</page>
+	<group string="Loyalty info" name="loyalty_cards">
+	  <field name="loyaltycard_ids" string="Loyaltycards"/>
+	</group>
       </field>
     </record>
 </odoo>
