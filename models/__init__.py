@@ -2,4 +2,5 @@
 # Part of hr_travelsupport -module. See LICENSE file for full copyright and
 # licensing details
 
-import cards.py
+import cards
+import employee
