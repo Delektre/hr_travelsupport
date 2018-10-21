@@ -2,7 +2,7 @@
 
 from odoo import api, fields, models, _
 
-class HrEmployeeTravel(models.Model):
+class HrEmployee(models.Model):
     _inherit = 'hr.employee'
     loyaltycard_ids = fields.One2many(
         'hr_travelsupport.loyaltycard',

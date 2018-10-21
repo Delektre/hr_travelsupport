@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
+
     <record id="employee_loyalty_view_form" model="ir.ui.view">
       <field name="name">hr.travelsupport.form</field>
       <field name="model">hr.employee</field>
@@ -9,6 +9,6 @@
 	<field name="loyaltycard_ids" string="Loyaltycards"/>
       </field>
     </record>
-  </data>
+
 </odoo>
       
