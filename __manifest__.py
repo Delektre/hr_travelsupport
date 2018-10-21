@@ -5,8 +5,9 @@
 # noinspection PyStatementEffect
 {
     "name": "HR - Travel support (simple)",
-    "category": "Localization",
+    "category": "Human Resources",
     "version": "0.0.1",
+    "summary": "Travelsupport (Simple)",
     "description": """
     Simple travel support extension.
 
@@ -18,6 +19,7 @@
         "hr",
     ],
     "data": [
+        'views/hr_travelsupport_views.xml',
     ],
     "installable": True,
 }
