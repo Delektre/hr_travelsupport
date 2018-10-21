@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id="employee_loyalty_view_form" model="ir.ui.view">
       <field name="name">hr.travelsupport.form</field>
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form"/>
       <field name="arch" type="xml">
-	<field name="loyaltycard_ids" string="Loyaltycards"/>
+	<page name="hr_travelsupport" string="HR Travelsupport">
+	  <group>
+	    <group string="Loyalty info" name="loyalty_cards">
+	      <field name="loyaltycard_ids" string="Loyaltycards"/>
+	    </group>
+	  </group>
+	</page>
       </field>
     </record>
-
 </odoo>
       
