@@ -5,9 +5,15 @@
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form"/>
       <field name="arch" type="xml">
-	<group string="Loyalty info" name="loyalty_cards">
-	  <field name="loyaltycard_ids" string="Loyaltycards"/>
-	</group>
+	<xpath expr="//notebook/page[last()]" position="after">
+	  <page string="Travel Support">
+	    <group>
+	      <group string="Loyalty info" name="loyalty_cards">
+		<field name="loyaltycard_ids" string="Loyaltycards"/>
+	      </group>
+	    </group>
+	  </page>
+	</xpath>
       </field>
     </record>
 </odoo>
