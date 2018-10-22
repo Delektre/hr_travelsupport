@@ -5,12 +5,13 @@ from odoo import api, fields, models, _
 class HrTravelSupportLoyaltyCard(models.Model):
     _name = "hr_travelsupport.loyaltycard"
     _description = 'Loyaltycard'
-    employee_id = fields.Many2one('hr.employee', string='Employee',
-                                  ondelete='cascade', index=True)
+    _inherit = ['mail.thread']
+
     name = fields.Selection(
         [
             'Finnair',
             'Lufthansa/Miles &amp; More',
+            'SAS',
             'Norwegian',
             'Scandic',
             'Avis',
@@ -19,5 +20,9 @@ class HrTravelSupportLoyaltyCard(models.Model):
         ],
         string='Card',
     )
-    number = fields.Char('Number')
 
+    employee_id = fields.Many2one('hr.employee', string='Employee',
+                                  ondelete='cascade', index=True)
+    
+    number = fields.Char('Number')
+    date_end = fields.Date('End Date', default=None)

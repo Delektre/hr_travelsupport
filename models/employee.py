@@ -8,6 +8,5 @@ class HrEmployee(models.Model):
     loyaltycard_ids = fields.One2many(
         'hr_travelsupport.loyaltycard',
         'employee_id',
-        string='Loyaltycards',
+        string='Loyaltycards'
     )
-
